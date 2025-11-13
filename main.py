@@ -9,7 +9,7 @@
         #Hint3: THis method will help you: https://www.w3schools.com/python/ref_string_strip.asp
 
 f = open("Input/Letters/starting_letter.txt", "r")
-print(f.read())
+letter_template = f.readlines()
 
 open("Input/Names/invited_names.txt", mode = "r")
 
