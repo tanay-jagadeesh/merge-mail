@@ -8,8 +8,8 @@
     #Hint2: This method will also help you: https://www.w3schools.com/python/ref_string_replace.asp
         #Hint3: THis method will help you: https://www.w3schools.com/python/ref_string_strip.asp
 
-f = open("Input/Letters/starting_letter.txt", "r")
-letter_template = f.readlines()
+with open("./Input/Letters/starting_letter.txt") as names_file:
+    names = names_file.readlines()
 
 open("Input/Names/invited_names.txt", mode = "r")
 
