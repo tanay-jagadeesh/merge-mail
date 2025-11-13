@@ -1,3 +1,5 @@
+PLACEHOLDER = "[name]"
+
 #TODO: Create a letter using starting_letter.txt 
 
 #for each name in invited_names.txt
@@ -8,8 +10,8 @@
     #Hint2: This method will also help you: https://www.w3schools.com/python/ref_string_replace.asp
         #Hint3: THis method will help you: https://www.w3schools.com/python/ref_string_strip.asp
 
-with open("./Input/Letters/starting_letter.txt") as names_file:
+with open("./Input/Names/invited_names.txt") as names_file:
     names = names_file.readlines()
 
-open("Input/Names/invited_names.txt", mode = "r")
-
+with open("./Input/Letters/starting_letter.txt") as letter_file:
+    letter_contents = letter_file.read()
