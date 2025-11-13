@@ -18,4 +18,6 @@ with open("./Input/Letters/starting_letter.txt") as letter_file:
     txt = PLACEHOLDER
     for name in names:
         x = letter_contents.replace(PLACEHOLDER, name.strip())
+        with open(f"./Output/ReadyToSend/letter_for_{name.strip()}.docx", mode = "w") as completed_letter:
+            completed_letter.write(new_letter)
         print(x)
